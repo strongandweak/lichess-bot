@@ -18,12 +18,12 @@ class Conversation():
 
     def command(self, line, game, cmd):
         if cmd == "commands" or cmd == "help":
-            self.send_reply(line, "Supported commands: !wait(only usable at the start of the game!),!name, !eval, !queue, !time")
+            self.send_reply(line, "Supported commands: !wait(only usable at the start of the game!),!engine, !eval, !queue, !time")
         elif cmd == "wait" and game.is_abortable():
             game.ping(30, 60)
             self.send_reply(line, "Waiting 30 seconds...")
-        elif cmd == "name":
-            self.send_reply(line, "Its a self learning bot! But my master ordered me not to tell my name!")
+        elif cmd == "engine":
+            self.send_reply(line, "Stockfish dev running on heroku server")
         elif cmd == "eval":
             stats = self.engine.get_stats()
             self.send_reply(line, ", ".join(stats))
@@ -35,6 +35,8 @@ class Conversation():
                 self.send_reply(line, "Challenge queue: {}".format(challengers))
             else:
                 self.send_reply(line, "No challenges as yet.")
+         elif cmd == "time":
+            self.send_reply(line, "The time is - import time curr_time = time.localtime() curr_clock = time.strftime("%H:%M:%S", curr_time) print(curr_clock) ")
 
     def send_reply(self, line, reply):
         self.xhr.chat(self.game.id, line.room, reply)
