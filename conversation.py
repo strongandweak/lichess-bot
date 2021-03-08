@@ -35,8 +35,6 @@ class Conversation():
                 self.send_reply(line, "Challenge queue: {}".format(challengers))
             else:
                 self.send_reply(line, "No challenges as yet.")
-         elif cmd == "time":
-            self.send_reply(line, "The time is - import time curr_time = time.localtime() curr_clock = time.strftime("%H:%M:%S", curr_time) print(curr_clock) ")
 
     def send_reply(self, line, reply):
         self.xhr.chat(self.game.id, line.room, reply)
