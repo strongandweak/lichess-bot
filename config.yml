@@ -10,6 +10,7 @@ engine:                      # engine settings
     enabled: true           # activate polyglot book
     book:
       standard: # list of book file paths for variant standard
+        - Aaricia_2012.bin
         - komodo.bin
         - elo3300.bin
 #      atomic: # list of book file paths for variant atomic
@@ -22,18 +23,18 @@ engine:                      # engine settings
 #   cpuct: 3.1
   uci_options:               # arbitrary UCI options passed to the engine
  
-option name Contempt type spin : 24
+option name Contempt type spin : 0
 option name Analysis Contempt type combo : Both var Off var White var Black var Both
 option name Threads type spin : 512
 option name Hash type spin : 33554432
 option name Ponder type check : false
 option name MultiPV type spin : 1
 option name Skill Level type spin : 20
-option name Move Overhead type spin : 10
-option name Slow Mover type spin : 50
+option name Move Overhead type spin : 1000
+option name Slow Mover type spin : 10
 option name nodestime type spin : 0
-option name UCI_Chess960 type check : false
-option name UCI_AnalyseMode type check : false
+option name UCI_Chess960 type check : true
+option name UCI_AnalyseMode type check : true
 option name UCI_LimitStrength type check : false
 option name UCI_Elo type spin : 2850
 option name UCI_ShowWDL type check : false
@@ -63,7 +64,7 @@ fake_think_time: false       # artificially slow down the bot to pretend like it
 
 challenge:                   # incoming challenges
   concurrency: 1             # number of games to play simultaneously
-  sort_by: "best"            # possible values: "best", "first"
+  sort_by: "first"            # possible values: "best", "first"
   accept_bot: true          # accepts challenges coming from other bots
   only_bot: false            # accept challenges by bots only
   max_increment: 0         # maximum amount of increment to accaept a challenge. the max is 180. set to 0 for no increment
@@ -82,7 +83,7 @@ challenge:                   # incoming challenges
   time_controls:             # time controls to accept
     - bullet
     - blitz
-#   - rapid
+    - rapid
 #   - classical
 #   - correspondence
   modes:                     # game modes to accept
