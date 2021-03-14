@@ -1,7 +1,7 @@
 ## Overview
 
-[![Build Status](https://travis-ci.org/official-stockfish/Stockfish.svg?branch=master)](https://travis-ci.org/official-stockfish/Stockfish)
-[![Build Status](https://ci.appveyor.com/api/projects/status/github/official-stockfish/Stockfish?branch=master&svg=true)](https://ci.appveyor.com/project/mcostalba/stockfish/branch/master)
+[![The Uninvented Robot](https://lichess.org/@/TheUninventedRobot)](https://lichess.org/@/TheUninventedRobot)
+[![Source Code](https://github.com/strongandweak/lichess-bot)](https://github.com/strongandweak/lichess-bot)
 
 [Stockfish](https://stockfishchess.org) is a free, powerful UCI chess engine
 derived from Glaurung 2.1. Stockfish is not a complete chess program and requires a
