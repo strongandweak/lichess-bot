@@ -1,8 +1,5 @@
 ## Overview
 
-![The Uninvented Robot](https://lichess.org/TheUninventedRobot)
-![Source Code](https://github.com/strongandweak/lichess-bot)
-
 [Stockfish](https://stockfishchess.org) is a free, powerful UCI chess engine
 derived from Glaurung 2.1. Stockfish is not a complete chess program and requires a
 UCI-compatible graphical user interface (GUI) (e.g. XBoard with PolyGlot, Scid,
