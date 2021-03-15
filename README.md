@@ -1,6 +1,6 @@
 ## Overview
 
-[![The Uninvented Robot](https://lichess.org/@/TheUninventedRobot)](https://lichess.org/@/TheUninventedRobot)
+[![The Uninvented Robot](https://lichess.org/@/TheUninventedRobot)](https://lichess.org/)
 [![Source Code](https://github.com/strongandweak/lichess-bot)](https://github.com/strongandweak/lichess-bot)
 
 [Stockfish](https://stockfishchess.org) is a free, powerful UCI chess engine
